@@ -46,6 +46,9 @@ const extractCSSProperties = (props: TemplateStringsArray, ...rest: string[]) =>
         if (results === null) {
             continue;
         }
+        if (results.length !== 3) {
+            continue;
+        }
         if (results[1] === null || results[2] === null) {
             continue;
         }
